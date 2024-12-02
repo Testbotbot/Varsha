@@ -19,7 +19,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '8002457970:AAGwutXh7SLgWtj1yw8fQlbXU1Grq9d
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6283322330').split()]
-USERNAME = environ.get('USERNAME', "https://t.me/jirayamaster_24") # ADMIN USERNAME
+USERNAME = environ.get('USERNAME', "https://t.me/JIRAYAMASTER17") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002478045256'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+_UFtcf2m1olhN2Fl')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002461284739').split()]
@@ -69,12 +69,12 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-START_IMG = (environ.get('START_IMG', 'https://envs.sh/Yva.jpg https://i.ibb.co/DQ35zLZ/image.jpg')).split()
+START_IMG = (environ.get('START_IMG', 'https://envs.sh/Yva.jpg ')).split()
 FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f2.jpg')
 REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
 PAYPICS = (environ.get('PAYPICS', 'https://graph.org/file/f4db1c3ad3d9e38b328e6.jpg')).split()
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/9f3f47c690bbcc67633c2.jpg'))
-REACTIONS = ["👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡"]
+REACTIONS = ["🤪"😈"😍"👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡"]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -100,13 +100,13 @@ LINK_MODE = is_enabled('LINK_MODE', True)
 STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or Flase
 # Online Stream and Download
 
-MULTI_CLIENT = False
+MULTI_CLIENT = True
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
 else:
-    ON_HEROKU = False
+    ON_HEROKU = True
 URL = environ.get("FQDN", "")
 
 #---------------------------------------------------------------
